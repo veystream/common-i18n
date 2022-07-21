@@ -1,0 +1,4 @@
+rootProject.name = 'common-i18n'
+include 'i18n-common'
+include 'i18n-example'
+

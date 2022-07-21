@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    implementation project(':i18n-common')
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.0'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.7.0'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.29'
+    implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.3.1'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}

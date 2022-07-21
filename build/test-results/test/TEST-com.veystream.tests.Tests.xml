@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.veystream.tests.Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-20T02:55:05" hostname="xideMacBook-Pro.local" time="0.029">
+  <properties/>
+  <testcase name="testEnumAnnotation()" classname="com.veystream.tests.Tests" time="0.029"/>
+  <system-out><![CDATA[春天
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
