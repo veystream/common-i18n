@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "f6854e76-a50c-4548-b005-3dd74a3ad0e8",
+		"name": "i18n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "错误信息-中文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/error",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "错误信息-英文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "en_us",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/error",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "简单常量-中文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/constant1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"constant1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "简单常量-英文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "en_us",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/constant1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"constant1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "带变量的常量-中文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/constant2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"constant2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "带变量的常量-英文",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/example/constant2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"constant2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "参数校验-中文",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/example/paramsValid",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"paramsValid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "参数校验-英文",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "language",
+						"value": "zh_cn",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/example/paramsValid",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"example",
+						"paramsValid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取语言包",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "language",
+						"value": "en_us",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8081/languagePackage?type=APP1-LanguagePackage",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"languagePackage"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "APP1-LanguagePackage"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
