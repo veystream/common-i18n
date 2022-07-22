@@ -35,6 +35,8 @@ INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `cre
 INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `created_time`, `updated_time`) VALUES (9, 'Constant', '先生', 'Mr', 'en_US', now(), now());
 INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `created_time`, `updated_time`) VALUES (10, 'ParamsValid', '姓名不能为空', 'Name required', 'en_US', now(), now());
 INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `created_time`, `updated_time`) VALUES (11, 'ParamsValid', '内容不能为空', 'Content required', 'en_US', now(), now());
+INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `created_time`, `updated_time`) VALUES (13, 'db', 'Goods.description.1', 'goods_description!', 'en_US', now(), now());
+INSERT INTO `i18n`.`i18n_message`(`id`, `type`, `code`, `text`, `language`, `created_time`, `updated_time`) VALUES (14, 'db', 'Goods.image.1', 'goods_image!', 'en_US', now(), now());
 ```
 
 修改i18n-example下application.properties
@@ -44,7 +46,7 @@ spring.datasource.username=
 spring.datasource.password=
 ```
 设置i18n开关是否开启
-```aidl
+```
 i18n.flag=true
 ```
 启动入口：i18n-example下Application
@@ -136,8 +138,38 @@ public BaseResult exceptionHandle(MethodArgumentNotValidException ex) {
 ```
 
 ### 数据库查询字段多语言
-
-待实现
+实体上使用注解I18nResource。identityKey为实体的主键id，prefix为词条前缀，不填写则为类全名。i18nFields为需要多语言的字段。词条的完整拼接规则为prefix.fieldName.identityKey
+```
+@Data
+@I18nResource(
+        prefix = "Goods",
+        identityKey = "id",
+        i18nFields = {
+                @I18nField(fieldName = "name"),
+                @I18nField(fieldName = "description"),
+                @I18nField(fieldName = "image"),
+        }
+)
+@TableName(value = "t_goods")
+public class Goods {
+    /**
+     * 商品id
+     */
+    private Long id;
+    /**
+     * 商品名称
+     */
+    private String name;
+    /**
+     * 商品描述
+     */
+    private String description;
+    /**
+     * 商品图片
+     */
+    private String image;
+}
+```
 
 ### 前端语言包
 前端语言包可以通过type去定义，获取语言包时使用type来获取同一type下所有词条，并根据语言进行分组返回

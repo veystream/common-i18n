@@ -1,6 +1,7 @@
 package com.veystream.config;
 
 import com.veystream.dao.I18nMessageDao;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +15,7 @@ import java.util.Locale;
 /**
  * @author Vincy.Xi
  */
+@Getter
 @Configuration
 @ConditionalOnProperty(value = "i18n.flag")
 public class I18nConfig implements WebMvcConfigurer {

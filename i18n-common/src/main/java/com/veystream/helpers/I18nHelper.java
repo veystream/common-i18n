@@ -26,11 +26,11 @@ public class I18nHelper {
     }
 
     public static String get(String msgKey) {
-        return get(msgKey, msgKey, new Object[]{});
+        return get(msgKey, new Object[]{});
     }
 
     public static String get(String msgKey, String defaultMsg) {
-        String ret = get(msgKey, defaultMsg, new Object[]{});
+        String ret = get(msgKey, new Object[]{});
         if (StringUtils.isBlank(ret)) {
             return defaultMsg;
         }
@@ -46,11 +46,7 @@ public class I18nHelper {
         return get(sub.replace(ret));
     }
 
-    private static String get(String msgKey, String defaultKey, Object... args) {
-        String ret = messageSource.getMessage(msgKey, args, "", LocaleContextHolder.getLocale());
-        if (StringUtils.isBlank(ret)) {
-            return defaultKey;
-        }
-        return ret;
+    private static String get(String msgKey, Object... args) {
+        return messageSource.getMessage(msgKey, args, "", LocaleContextHolder.getLocale());
     }
 }

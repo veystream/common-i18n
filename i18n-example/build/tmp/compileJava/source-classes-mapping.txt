@@ -1,28 +1,34 @@
-com/veystream/enums/Gender.java
- com.veystream.enums.Gender
-com/veystream/controller/ErrorExampleController.java
- com.veystream.controller.ErrorExampleController
-com/veystream/enums/Active.java
- com.veystream.enums.Active
-com/veystream/service/LanguagePackageService.java
- com.veystream.service.LanguagePackageService
-com/veystream/Application.java
- com.veystream.Application
 com/veystream/service/TestService.java
  com.veystream.service.TestService
-com/veystream/enums/ErrorCode.java
- com.veystream.enums.ErrorCode
-com/veystream/controller/LanguagePackageController.java
- com.veystream.controller.LanguagePackageController
-com/veystream/controller/DatabaseExampleController.java
- com.veystream.controller.DatabaseExampleController
-com/veystream/controller/ConstantExampleController.java
- com.veystream.controller.ConstantExampleController
- com.veystream.controller.ConstantExampleController$Gender
 com/veystream/controller/EnumExampleController.java
  com.veystream.controller.EnumExampleController
  com.veystream.controller.EnumExampleController$Enum1Resp
  com.veystream.controller.EnumExampleController$Enum1Resp$Enum1RespBuilder
+com/veystream/enums/Active.java
+ com.veystream.enums.Active
+com/veystream/dao/GoodsMapper.java
+ com.veystream.dao.GoodsMapper
+com/veystream/Application.java
+ com.veystream.Application
 com/veystream/controller/ParamsValidExampleController.java
  com.veystream.controller.ParamsValidExampleController
  com.veystream.controller.ParamsValidExampleController$ParamsReq
+com/veystream/enums/ErrorCode.java
+ com.veystream.enums.ErrorCode
+com/veystream/controller/LanguagePackageController.java
+ com.veystream.controller.LanguagePackageController
+com/veystream/controller/ErrorExampleController.java
+ com.veystream.controller.ErrorExampleController
+com/veystream/service/LanguagePackageService.java
+ com.veystream.service.LanguagePackageService
+com/veystream/dao/GoodsDao.java
+ com.veystream.dao.GoodsDao
+com/veystream/controller/DatabaseFieldsExampleController.java
+ com.veystream.controller.DatabaseFieldsExampleController
+com/veystream/enums/Gender.java
+ com.veystream.enums.Gender
+com/veystream/controller/ConstantExampleController.java
+ com.veystream.controller.ConstantExampleController
+ com.veystream.controller.ConstantExampleController$Gender
+com/veystream/entity/Goods.java
+ com.veystream.entity.Goods

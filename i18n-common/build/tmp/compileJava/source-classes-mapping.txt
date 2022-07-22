@@ -1,25 +1,27 @@
 com/veystream/dao/I18nMessage.java
  com.veystream.dao.I18nMessage
-com/veystream/config/DataBaseBundleMessageSource.java
- com.veystream.config.DataBaseBundleMessageSource
+com/veystream/exception/BaseException.java
+ com.veystream.exception.BaseException
 com/veystream/helpers/I18nHelper.java
  com.veystream.helpers.I18nHelper
-com/veystream/config/I18nConfig.java
- com.veystream.config.I18nConfig
+com/veystream/config/MyLocaleResolver.java
+ com.veystream.config.MyLocaleResolver
 com/veystream/http/BaseResult.java
  com.veystream.http.BaseResult
  com.veystream.http.BaseResult$BaseResultBuilder
-com/veystream/annotation/I18nField.java
- com.veystream.annotation.I18nField
-com/veystream/dao/I18nMessageDao.java
- com.veystream.dao.I18nMessageDao
-com/veystream/annotation/I18nResource.java
- com.veystream.annotation.I18nResource
-com/veystream/exception/BaseException.java
- com.veystream.exception.BaseException
 com/veystream/dao/I18nMessageMapper.java
  com.veystream.dao.I18nMessageMapper
-com/veystream/config/MyLocaleResolver.java
- com.veystream.config.MyLocaleResolver
+com/veystream/config/DataBaseBundleMessageSource.java
+ com.veystream.config.DataBaseBundleMessageSource
+com/veystream/dao/I18nMessageDao.java
+ com.veystream.dao.I18nMessageDao
+com/veystream/config/I18nConfig.java
+ com.veystream.config.I18nConfig
 com/veystream/exception/GlobalExceptionHandler.java
  com.veystream.exception.GlobalExceptionHandler
+com/veystream/interceptor/I18nInterceptor.java
+ com.veystream.interceptor.I18nInterceptor
+com/veystream/annotation/I18nField.java
+ com.veystream.annotation.I18nField
+com/veystream/annotation/I18nResource.java
+ com.veystream.annotation.I18nResource
